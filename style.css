@@ -5,28 +5,31 @@
 }
 
 body {
+    margin: 0;
     background: black;
     overflow: hidden;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: Arial, sans-serif;
-}
-/* FIX 9:16 */
-.container {
-    position: relative;
-    height: 100vh;
-    width: calc(100vh * 9 / 16);
-    max-width: 100vw;
 }
 
-/* VIDEO */
+/* container ne középre igazítson */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 🔥 EZ A LÉNYEG */
 video {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down; /* NEM vágja le */
-    background: black;   /* fekete sávok */
+    position: absolute;
+    top: 0;              /* mindig felül */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    height: auto;        /* arány megtartása */
+    max-height: 100vh;   /* ne lógjon ki */
+
+    object-fit: contain;
+    background: black;
 }
 
 /* OVERLAY - gradient háttér */
@@ -142,4 +145,4 @@ video {
     100% {
         opacity: 0;
     }
-  }
+}
