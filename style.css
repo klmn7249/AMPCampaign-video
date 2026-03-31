@@ -20,7 +20,7 @@ body {
 /* 🔥 EZ A LÉNYEG */
 video {
     position: absolute;
-    from-top: 5%;              /* mindig felül */
+    top: 5%;              /* mindig felül */
     left: 50%;
     transform: translateX(-50%);
 
