@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    backgroung: linear-gradient(135deg, #fd8100 0%, #8a4a1f 40%, #081c3f 100%);
 }
 
 /* VIDEO */
@@ -29,7 +30,6 @@ video {
     max-width: 100%;           /* soha ne lógjon ki oldalra */
     max-height: 100%;          /* maradjon kb középen */
     object-fit: contain;        /* teljes képet lássunk */
-    background: linear-gradient(135deg, #fd8100 0%, #8a4a1f 40%, #081c3f 100%);    /* a gradiens látszik mögötte */
     display: block;
 }
 
