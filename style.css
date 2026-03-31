@@ -26,7 +26,8 @@ body {
 video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* NEM vágja le */
+    background: black;   /* fekete sávok */
 }
 
 /* OVERLAY - gradient háttér */
