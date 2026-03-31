@@ -18,7 +18,7 @@ body {
     position: relative;
     width: 100vw;
     max-width: 100%;          /* minden képernyőre */
-    max-height: 90vh;
+    max-height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
