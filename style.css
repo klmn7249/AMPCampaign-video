@@ -5,19 +5,20 @@
 }
 
 body {
-    background: linear-gradient(135deg, #fd8100 0%, #8a4a1f 40%, #081c3f 100%);
     overflow: hidden;
     height: 100vh;
     display: flex;
     justify-content: center;  /* vízszintesen középre */
     align-items: center;      /* függőlegesen középre */
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fd8100 0%, #8a4a1f 40%, #081c3f 100%);
 }
 
 .container {
     position: relative;
     width: 100vw;
     max-width: 100%;          /* minden képernyőre */
+    max-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@ body {
 /* VIDEO */
 video {
     max-width: 100%;           /* soha ne lógjon ki oldalra */
-    max-height: 90vh;          /* maradjon kb középen */
+    max-height: 100%;          /* maradjon kb középen */
     object-fit: contain;        /* teljes képet lássunk */
     background: transparent;    /* a gradiens látszik mögötte */
     display: block;
