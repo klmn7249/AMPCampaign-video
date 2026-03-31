@@ -27,7 +27,7 @@ video {
     width: 100%;
     height: 100%;
     object-fit: scale-down; /* NEM vágja le */
-    object-position: top;
+    object-position: 0;
     background: black;   /* fekete sávok */
 }
 
