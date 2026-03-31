@@ -13,10 +13,6 @@ body {
     align-items: flex-start;
     font-family: Arial, sans-serif;
 }
-.container {
-        margin-top: 10px;
-        }
-}
 /* FIX 9:16 */
 .container {
     position: relative;
