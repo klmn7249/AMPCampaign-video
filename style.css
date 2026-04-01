@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    mi-height: 100vh;
+    min-height: 100vh;
     position: relative;
     width: 100vw;
     max-width: 100%;          /* minden képernyőre */
@@ -121,6 +121,7 @@ video {
     min-height: 20px;
     position: fixed;
     bottom: 10px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 
