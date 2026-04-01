@@ -6,10 +6,12 @@
 
 body {
     /*background: linear-gradient(135deg, #fd8100 0%, #8a4a1f 40%, #081c3f 100%);*/
+    background: #8B0000;
     overflow: hidden;
     height: 100vh;
     display: flex;
-    justify-content: center;  /* vízszintesen középre */
+    flex-direction: column;
+    justify-content: flex-start;  /* vízszintesen középre */
     align-items: center;      /* függőlegesen középre */
     font-family: Arial, sans-serif;
 }
@@ -22,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('cover.png) center/contain no-repeat;
 }
 
 /* VIDEO */
@@ -44,7 +47,7 @@ video {
 
     background: rgba(0,0,0,0.0); /* áttetsző, háttér a body-ból jön */
 
-    animation: fadeIn 1s ease forwards;
+    animation: fadeIn 0.5s ease forwards;
 }
 
 #playBtn {
@@ -68,7 +71,7 @@ video {
     transition: all 0.3s ease;
 }
 
-#playBtn:hover {
+#playBtn: hover {
     transform: scale(1.1);
     background: rgba(255,255,255,0.25);
 }
@@ -113,21 +116,16 @@ video {
     animation: fadeIn 0.6s ease forwards;
 }
 #disclaimer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-
     color: rgba(255,255,255,0.7);
     font-size: 12px;
     text-align: center;
 
     width: 90%;
     max-width: 400px;
+    margin-top: 10px;
 
     pointer-events: none; /* ne zavarja a UX-et */
-    z-index: 4;
-    }
+}
 #desktopBlock {
     position: fixed;
     inset: 0;
