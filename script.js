@@ -1,9 +1,13 @@
-const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
 const video = document.getElementById("video");
 const playBtn = document.getElementById("playBtn");
 const overlay = document.getElementById("overlay");
 const replayBtn = document.getElementById("replayBtn");
+const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
+if (!isMobile) {
+    document.querySelector(".container").style.display = "none";
+    document.getElementById("desktopBlock").style.display = "flex";
+}
 /* PLAY (hanggal) */
 playBtn.addEventListener("click", () => {
     video.muted = false;
