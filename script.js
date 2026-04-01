@@ -1,9 +1,3 @@
-const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
-
-if (!isMobile) {
-    document.querySelector(".container").style.display = "none";
-    document.getElementById("desktopBlock").style.display = "flex";
-}
 const video = document.getElementById("video");
 const playBtn = document.getElementById("playBtn");
 const overlay = document.getElementById("overlay");
@@ -38,3 +32,12 @@ replayBtn.addEventListener("click", () => {
 /* tiltások */
 document.addEventListener("contextmenu", e => e.preventDefault());
 document.addEventListener("keydown", e => e.preventDefault());
+
+document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+        document.querySelector(".container").style.display = "none";
+        document.getElementById("desktopBlock").style.display = "flex";
+    }
+});
