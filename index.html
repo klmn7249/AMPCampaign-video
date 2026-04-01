@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- PRELOAD -->
+    <link rel="preload" href="cover.png" as="image" type="image/png">
     <link rel="preload" href="ÁMP kampányvideó (1).mp4" as="video" type="video/mp4">
 
     <title>Video</title>
@@ -13,12 +14,12 @@
 <body>
 
 <div class="container">
-    <!-- OVERLAY -->
     <div id="desktopBlock">
     <p>Nyisd meg telefonon:</p>
     <img src="qr.png" alt="QR Code">
     <p>Ez az oldal mobilra készült.<br>Olvasd be a QR kódot a telefonoddal!</p>
     </div>
+    <!-- OVERLAY -->
     <div id="overlay">
         <button id="playBtn">
             <span class="icon">▶</span>
@@ -32,11 +33,11 @@
     <button id="replayBtn">
         <span class="icon">↻</span>
     </button>
-    <div id="disclaimer">
-            Semmilyen módon nem állunk kapcsolatban az Állami Mutyi nevű társasjátékkal.
-            </div>
 </div>
-    
+
+<div id="disclaimer">
+    Semmilyen módon nem állunk kapcsolatban az Állami Mutyi nevű társasjátékkal.
+</div>
 
 <script src="script.js"></script>
 </body>
