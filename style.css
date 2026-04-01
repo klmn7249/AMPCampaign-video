@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+    mi-height: 100vh;
     position: relative;
     width: 100vw;
     max-width: 100%;          /* minden képernyőre */
@@ -29,6 +30,7 @@ body {
 
 /* VIDEO */
 video {
+    aspect-ratio: 9/16;
     max-width: 100%;           /* soha ne lógjon ki oldalra */
     max-height: 100%;          /* maradjon kb középen */
     object-fit: contain;        /* teljes képet lássunk */
@@ -116,6 +118,7 @@ video {
     animation: fadeIn 0.6s ease forwards;
 }
 #disclaimer {
+    min-height: 20px;
     position: fixed;
     bottom: 10px;
     left: 50%;
