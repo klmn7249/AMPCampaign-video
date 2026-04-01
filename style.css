@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('cover.png) center/contain no-repeat;
+    background: url('cover.png') center/contain no-repeat;
 }
 
 /* VIDEO */
@@ -71,7 +71,7 @@ video {
     transition: all 0.3s ease;
 }
 
-#playBtn: hover {
+#playBtn:hover {
     transform: scale(1.1);
     background: rgba(255,255,255,0.25);
 }
@@ -156,4 +156,9 @@ video {
 #desktopBlock img {
     width: 200px;
     margin-top: 20px;
+}
+@media (max-width: 768px) {
+    #desktopBlock img {
+        width: 150px;
+    }
 }
